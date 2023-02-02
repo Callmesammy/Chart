@@ -64,7 +64,7 @@ public class Panel_Bord extends javax.swing.JComponent {
         
         g2.dispose();
        g.drawImage(img, 0, 0, null);
-    }
+     }
       
     
    
