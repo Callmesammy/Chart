@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class Panel_Bord extends javax.swing.JComponent {
 
-   public final List<Model__chart> list = new ArrayList<>();
+   private final List<Model__chart> list = new ArrayList<>();
    
    private double BigNub;
    private double totalNumb;
@@ -38,11 +38,11 @@ public class Panel_Bord extends javax.swing.JComponent {
         super.paint(g); 
     }
     
-    public void addStats(Graphics g){
+    private void addStats(Graphics g){
         int width = getWidth();
         int height = getHeight()-FINAL_INT;
         int space = 5;
-        int size = Math.max(width, height)-space;
+        int size = Math.min(width, height)-space;
         int x = (width -size)/2;
         int y = (height-size)/2;
         if(width<=0){
@@ -59,11 +59,15 @@ public class Panel_Bord extends javax.swing.JComponent {
             
         }else{
             g2.setColor(new Color(200,200,200));
-            g2.drawOval(x, y, space, space);
+            g2.drawOval(x, y, size, size);
         }
+        
         g2.dispose();
-        g.drawImage(img, 0,0, null);
+       g.drawImage(img, 0, 0, null);
     }
+      
+    
+   
 
    
     @SuppressWarnings("unchecked")

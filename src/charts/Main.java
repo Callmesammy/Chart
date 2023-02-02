@@ -30,11 +30,11 @@ public class Main extends javax.swing.JFrame {
         panel_Bord2.setLayout(panel_Bord2Layout);
         panel_Bord2Layout.setHorizontalGroup(
             panel_Bord2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 437, Short.MAX_VALUE)
+            .addGap(0, 440, Short.MAX_VALUE)
         );
         panel_Bord2Layout.setVerticalGroup(
             panel_Bord2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 301, Short.MAX_VALUE)
+            .addGap(0, 304, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -42,16 +42,15 @@ public class Main extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(71, 71, 71)
+                .addGap(46, 46, 46)
                 .addComponent(panel_Bord2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(196, Short.MAX_VALUE))
+                .addContainerGap(390, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
                 .addComponent(panel_Bord2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(136, Short.MAX_VALUE))
+                .addGap(0, 256, Short.MAX_VALUE))
         );
 
         pack();
