@@ -4,7 +4,7 @@ package Model_;
 import java.awt.Color;
 
 
-public class Model_Chart {
+public class Model_Charts {
 
     /**
      * @return the color
@@ -35,29 +35,29 @@ public class Model_Chart {
     }
 
     /**
-     * @return the number
+     * @return the value
      */
-    public double getNumber() {
-        return number;
+    public double getValue() {
+        return value;
     }
 
     /**
-     * @param number the number to set
+     * @param value the value to set
      */
-    public void setNumber(double number) {
-        this.number = number;
+    public void setValue(double value) {
+        this.value = value;
     }
     private Color color;
     private String title;
-    private double number;
+    private double value;
 
-    public Model_Chart(Color color, String title, double number) {
+    public Model_Charts(Color color, String title, double value) {
         this.color = color;
         this.title = title;
-        this.number = number;
+        this.value = value;
     }
 
-    public Model_Chart() {
+    public Model_Charts() {
     }
     
 }
