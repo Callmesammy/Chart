@@ -1,10 +1,13 @@
 
-package Model_;
+package Mode_;
 
 import java.awt.Color;
 
-
-public class Model_Charts {
+/**
+ *
+ * @author HP
+ */
+public class ModelChart {
 
     /**
      * @return the color
@@ -47,17 +50,18 @@ public class Model_Charts {
     public void setValue(double value) {
         this.value = value;
     }
-    private Color color;
-    private String title;
-    private double value;
 
-    public Model_Charts(Color color, String title, double value) {
+    public ModelChart(Color color, String title, double value) {
         this.color = color;
         this.title = title;
         this.value = value;
     }
 
-    public Model_Charts() {
+    public ModelChart() {
     }
+    
+    private Color color;
+    private String title;
+    private double value;
     
 }
