@@ -2,6 +2,8 @@
 package component;
 
 import Mode_.ModelChart;
+import java.awt.AlphaComposite;
+import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -63,6 +65,11 @@ public class panelCharts extends javax.swing.JComponent {
                double sz = addRectangleshape(data.getValue(), size);
                Shape s = getcreateShape(angle, toAngle, sz);
                g2.fill(s);
+               g2.setComposite(AlphaComposite.Clear);
+               g2.setStroke(new BasicStroke(3f));
+             
+               g2.draw(s); 
+               g2.setComposite(AlphaComposite.SrcOver);
                angle += toAngle;
            }
        }else{
